@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML/CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<!-- 6x6 table -->
+    <table>
+    	<thead>
+        	<tr>
+            	<th></th>
+            	<th>Godzilla</th>
+            	<th>Batman</th>
+            	<th>Shaq</th>
+            	<th>Aaron Carter</th>
+            	<th>Abe Lincolin</th>
+        	</tr>
+    	</thead>
+    	<tbody>
+        	<tr>
+            	<td>Godzilla</td>
+            	<td>N/A</td>
+            	<td>Minor Loss</td>
+            	<td>Loss</td>
+            	<td>Unknown</td>
+            	<td>Unknown</td>
+        	</tr>
+        	<tr>
+            	<td>Batman</td>
+            	<td>Minor Win</td>
+            	<td>N/A</td>
+            	<td>Total Victory</td>
+            	<td>Total Victory</td>
+            	<td>Total Loss</td>
+        	</tr>
+        	<tr>
+           		<td>Shaq</td>
+           		<td>Win</td>
+           		<td>Total Loss</td>
+           		<td>N/A</td>
+           		<td>Minor Loss</td>
+           		<td>Unknown</td>
+        	</tr>
+        	<tr>
+           		<td>Aaron Carter</td>
+           		<td>Unknown</td>
+           		<td>Total Loss</td>
+           		<td>Minor Win</td>
+           		<td>N/A</td>
+           		<td>Unknown</td>
+        	</tr>
+        	<tr>
+           		<td>Abe Lincolon</td>
+           		<td>Unknown</td>
+           		<td>Total Victory</td>
+           		<td>Unknown</td>
+           		<td>Unknown</td>
+           		<td>N/A</td>
+        	</tr>
+    	</tbody>
+    	<tfoot>
+      	<tr>
+       	 	<td colspan="2">Footer 1</td>
+        	<td colspan="4">Footer 2</td>
+     	 </tr>
+      
+    	</tfoot>
+	</table>
+
+	<!-- list with at least 3 entries -->
+	<dl>
+		<dt>Best Language</dt>    
+		<dd>Python</dd>
+		<dt>Wackyist Language</dt>
+		<dd>Haskell</dd>
+		<dt>SEGFAULTiest language</dt>
+		<dd>C</dd>
+	
+	</dl>
+
+	<!-- div with formatting -->
+	<div class="outer-content">
+		<div class="inner-content">Here is some content.</div>
+	</div>
+
+	<!-- form using GET on left -->
+	<div style="float: left;">
+		<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+	        <fieldset>
+	            <legend>GET Form</legend>
+	            <label>Text:
+	                <input type="text" name="text_input" size="30" maxlength="100">
+	            </label>
+	            <br />
+	            <label>Number:
+	                <input type="number" name="numerical_input" size="30">
+	            </label>
+	            <br />
+	            <label>Password:
+	                <input type="password" name="password_input" size="30" maxlength="100">
+	            </label>
+	            <br />
+	            <label>Select between:
+	            	<br />
+					<input type="radio" name="candy" value="Snickers" checked> Snickers<br>
+					<input type="radio" name="candy" value="Skittles"> Skittles<br>
+					<input type="radio" name="candy" value="Mentos"> Mentos
+	            </label>
+	            <br />
+	            <input type="submit">
+	        </fieldset>
+	        <br />
+	    </form>
+	</div>
+
+	<!-- form using POST on right -->
+	<div style="float: right;">
+		<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+	        <fieldset>
+	            <legend>POST Form</legend>
+	            <label>Text:
+	                <input type="text" name="text_input" size="30" maxlength="100">
+	            </label>
+	            <br />
+	            <label>Number:
+	                <input type="number" name="numerical_input" size="30">
+	            </label>
+	            <br />
+	            <label>Password:
+	                <input type="password" name="password_input" size="30" maxlength="100">
+	            </label>
+	            <br />
+	            <label>Select between:
+	            	<br />
+					<input type="radio" name="candy" value="Snickers" checked> Snickers<br>
+					<input type="radio" name="candy" value="Skittles"> Skittles<br>
+					<input type="radio" name="candy" value="Mentos"> Mentos
+	            </label>
+	            <br />
+	            <input type="submit">
+	        </fieldset>
+	        <br />
+	    </form>
+	</div>
+
+  </body>
+</html>
